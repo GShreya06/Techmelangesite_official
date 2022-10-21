@@ -1,0 +1,28 @@
+.bg-image{
+    height: 91vh;
+    width: 100%;
+    font-family:Garamond, serif;
+    background-image: url("src/bg-main-div.jpg");
+    background-size: cover;
+}
+.bg-image h1 p{
+    text-align: center;
+    text-justify: auto;
+    margin-left: 50px;
+    padding-left: 50px;
+
+}
+#aboutpage, #eventspage, #glimpsepage{
+    height: fit-content;
+    width: 100%;
+}
+
+.carousel-inner img {
+    width: 95%;
+    height: 70%;
+    align-items: stretch;
+    margin-left: 2%;
+  }
+h1{
+    text-align: center;
+}
