@@ -6,3 +6,9 @@ class Registration(models.Model):
     email=models.CharField(max_length=122)
     collegenm=models.CharField(max_length=122)
     events=models.CharField(max_length=122)
+
+class festdesc(models.Model):
+    fest_name=models.CharField(max_length=50)
+    fest_desc=models.CharField(max_length=100)
+    
+     
