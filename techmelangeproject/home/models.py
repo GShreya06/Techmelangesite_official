@@ -11,4 +11,7 @@ class festdesc(models.Model):
     fest_name=models.CharField(max_length=50)
     fest_desc=models.CharField(max_length=100)
     
+class events(models.Model):
+    e_name=models.CharField(max_length=50)
+    e_desc=models.CharField(max_length=100)
      

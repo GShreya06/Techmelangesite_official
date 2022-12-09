@@ -6,9 +6,10 @@ from .models import festdesc
 
 def home(request):
     a=festdesc.objects.all().first();
-    a=festdesc.objects.all()[0];
+    # b=festdesc.objects.all()[0][1];
     
     print(a)
+    # print(b)
     # for i in a:
     #     print(i.fest_name)
     #     print(i.fest_desc)
