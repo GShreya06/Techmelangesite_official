@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import festdesc
+from .models import events
 # Create your views here.
 
 

@@ -14,4 +14,6 @@ class festdesc(models.Model):
 class events(models.Model):
     e_name=models.CharField(max_length=50)
     e_desc=models.CharField(max_length=100)
+    e_img=models.ImageField()
+    
      
