@@ -9,6 +9,19 @@ class Registration(models.Model):
 
 class festdesc(models.Model):
     fest_name=models.CharField(max_length=50)
-    fest_desc=models.CharField(max_length=100)
+    fest_desc=models.TextField(max_length=1000)
+
+
+class sponsers(models.Model):
+    spon_name=models.CharField(max_length=50)
+    spon_logo=models.FileField(upload_to="pics/", max_length = 250, null = True, default = None)
     
+
+class teachcoor(models.Model):
+    teach_name=models.CharField(max_length=50)
+    teach_img=models.FileField(upload_to="pics/", max_length = 250, null = True, default = None)
+    url=models.URLField(max_length=100000)
+    
+
+   
      

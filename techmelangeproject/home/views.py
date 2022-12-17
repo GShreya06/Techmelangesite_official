@@ -1,15 +1,17 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import festdesc
+from .models import festdesc, sponsers, teachcoor
 # Create your views here.
 
 
 def home(request):
     a=festdesc.objects.all().first();
     a=festdesc.objects.all()[0];
-    
+
+   
     print(a)
     # for i in a:
+    
     #     print(i.fest_name)
     #     print(i.fest_desc)
 
