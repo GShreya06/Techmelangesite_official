@@ -6,7 +6,7 @@ from .models import events
 
 
 def home(request):
-    a=festdesc.objects.all().first();
+    a=festdesc.objects.all().first()
     # b=festdesc.objects.all()[0][1];
     
     print(a)

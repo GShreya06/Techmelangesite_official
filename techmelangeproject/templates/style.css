@@ -2,7 +2,7 @@
     height: 91vh;
     width: 100%;
     font-family:Garamond, serif;
-    background-image: url("src/bg-main-div.jpg");
+    background-image: url("/src/bg-main-div.jpg");
     background-size: cover;
 }
 .bg-image h1 p{
