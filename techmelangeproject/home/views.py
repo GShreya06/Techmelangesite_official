@@ -6,14 +6,29 @@ from .models import events
 
 
 def home(request):
-    a=festdesc.objects.all().first()
-    # b=festdesc.objects.all()[0][1];
+    # for only first element use first
+    #for all objects use all
+    a=festdesc.objects.all().first(); 
+    # a1=festdesc.objects.all()[0][1];
     
     print(a)
-    # print(b)
-    # for i in a:
-    #     print(i.fest_name)
+    # print(a1)
+    # for i in a: 
+    #     # for taking values from database use loop
+    #     print(i.fest_name) 
     #     print(i.fest_desc)
+    #     print(i.fest_bg)
+    
+    # b=events.objects.all();
+    # print(b)
+    # for i in b:
+    #     print(i.e_name)
+    #     print(i.e_desc)
+    #     print(i.e_img)
+    #     print(i.e_frm)
+        
+    
+    
 
     str = "ENIAC-The Computer Science Society, Department of Computer Science, Shaheed Rajguru College Of Applied Sciences for Women, University Of Delhi presents its Annual Techfest - TECH MELANGE'23."
     str1 = "As the name suggests, Tech Melange is the perfect blend of hosting both technical and non-technical events which means that it is a fun extravaganza for all the tech maniacs as well as the non-tech mob around the corner looking for opportunities and learnings. It was started in the year 2010 and every year thereafter, different sets of events were organised by the departmental council to instil an element of competition in technology; making it an adventurous ride of coding, technical tools, quizzes, brainstorming games and ideas organised by students."
