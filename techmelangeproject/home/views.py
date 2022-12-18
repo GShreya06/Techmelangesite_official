@@ -9,8 +9,7 @@ def home(request):
     # for only first element use first
     #for all objects use all
     a=festdesc.objects.all().first(); 
-    # a1=festdesc.objects.all()[0][1];
-    
+    # a1=festdesc.objects.all().get(1);
     print(a)
     # print(a1)
     # for i in a: 
@@ -19,8 +18,8 @@ def home(request):
     #     print(i.fest_desc)
     #     print(i.fest_bg)
     
-    # b=events.objects.all();
-    # print(b)
+    b=events.objects.all().first();
+    print(b)
     # for i in b:
     #     print(i.e_name)
     #     print(i.e_desc)
@@ -36,4 +35,5 @@ def home(request):
     str3 ="To maintain the legacy, we have some exciting events this year as well such as Ideathon, Brain Wreck, E - tambola, Cyber hustle, Whiz Quiz and Hardcode. This gives students a golden opportunity to showcase their talent, innovation, creativity and technicality. Students of various renowned universities and colleges(Delhi University, JNU, IP University, IT, Amity, IIIT-D, Jamia Milia etc.) participate in this mass endeavour."
     str4="Our aim is to enhance the intellectual awareness and development of students. The fest adopts a highly participative and interactive approach with a strong emphasis on ‘Learning by Doing’ and is successful in quenching the thirst of today’s well aware techno youth all around."
     
-    return render(request, 'index.html', {'stg': str, 'stg1': str1, 'stg2': str2,'stg3':str3 , 'stg4': str4,'a':a})
+    return render(request, 'index.html', {'stg': str, 'stg1': str1, 'stg2': str2,'stg3':str3 ,
+    'stg4': str4,'a':a , 'b':b})
