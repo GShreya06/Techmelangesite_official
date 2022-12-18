@@ -1,25 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-<<<<<<< HEAD
-from .models import festdesc, sponsers, teachcoor
-=======
 from .models import festdesc
 from .models import events
->>>>>>> 2f92d2b76ed3506dc36c32c465d91f92bbe09d05
 # Create your views here.
 
 
 def home(request):
-<<<<<<< HEAD
-    a=festdesc.objects.all().first();
-    a=festdesc.objects.all()[0];
-
-   
-    print(a)
-    # for i in a:
-    
-    #     print(i.fest_name)
-=======
     # for only first element use first
     #for all objects use all
     a=festdesc.objects.all().first(); 
@@ -30,7 +16,6 @@ def home(request):
     # for i in a: 
     #     # for taking values from database use loop
     #     print(i.fest_name) 
->>>>>>> 2f92d2b76ed3506dc36c32c465d91f92bbe09d05
     #     print(i.fest_desc)
     #     print(i.fest_bg)
     
