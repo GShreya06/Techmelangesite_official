@@ -10,12 +10,12 @@ class festdesc(models.Model):
 
 class sponsers(models.Model):
     spon_name=models.CharField(max_length=50)
-    spon_logo=models.FileField(upload_to="pics/", max_length = 250, null = True, default = None)
+    spon_logo=models.FileField(upload_to="static/", max_length = 250, null = True, default = None)
     
 
 class teachcoor(models.Model):
     teach_name=models.CharField(max_length=50)
-    teach_img=models.FileField(upload_to="pics/", max_length = 250, null = True, default = None)
+    teach_img=models.FileField(upload_to="static/", max_length = 250, null = True, default = None)
     url=models.URLField(max_length=100000)
  
 # Nishu Added
