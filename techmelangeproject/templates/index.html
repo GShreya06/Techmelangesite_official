@@ -17,42 +17,45 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#home_page_main"><img src="static\logo.webp" alt="Bootstrap" width="30" height="24" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about_page">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#events_page">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#glimpse_page">Glimpse</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactus_page">Contact Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="/templates/sponsers.html">Sponsers</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://www.icsi.edu/media/webmodules/brochure_standee_poster/ICSI%20-%20New%20Syllabus-revised.pdf" target="_blank" download>Schedule</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home_page_main"><img src="static\logo.webp" alt="Bootstrap" width="30" height="24" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_page">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#events_page">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#glimpse_page">Glimpse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactus_page">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/templates/sponsers.html">Sponsers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="" target="_blank" download>Schedule</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+    
 
     <section id="home_page_main">
       <div class="bg-image text-white">
@@ -85,11 +88,10 @@
     <section id="events_page">
       <div class="p-3 mb-2 bg-light text-black-50" id="eventspage">
         <h1 id="techmelange" class="display-4 fst-italic text-center"><b>Events</b></h1>
-        <!-- <p>GRID FLEX BOXES TO BE ADDED</p> -->
         <div class="container text-center">
           <div class="row row-cols-3">
             <div class="col">
-              <a href="/templates/event1.html"><img src="https://picsum.photos/id/237/200/300" alt="1" /></a>
+              <a href="/templates/event1.html"><img src="/static/poster1.jpg" height="300px" width="250px" alt="1" /></a>
             </div>
             <div class="col">
               <a href="/templates/event2.html"><img src="https://picsum.photos/seed/picsum/200/300" alt="2" /></a>
@@ -113,10 +115,8 @@
 
     <section id="glimpse_page">
       <div class="p-3 mb-2 bg-dark text-white" id="glimpsepage">
-        <!-- <div class="col-md-6 px-0"> -->
-        <h1 id="techmelange" class="display-4 fst-italic"><b>Glimpse</b></h1>
-        <!-- <p>Carousel TO BE ADDED</p> -->
-        <div id="demo" class="carousel slide" data-ride="carousel">
+        <h1 id="techmelange" class="display-4 fst-italic text-center"><b>Glimpse</b></h1>
+        <div id="demo" class="carousel slide text-center" data-ride="carousel">
           <!-- Indicators -->
           <ul class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -148,10 +148,13 @@
 
     <section id="contactus_page">
       <div class="p-3 mb-2 bg-dark text-white" id="contactuspage">
-        <h1 id="techmelange" class="display-4 fst-italic"><b>Contact Us</b></h1>
-        <p class="lead my-3">Technology is best when it brings people together</p>
-        <p>EMAIL + MAP TO BE ADDED</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.039847006692!2d77.3203464141196!3d28.598581392369603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4e54a9b122f%3A0x2e3b06c41fed53e6!2sShaheed%20Rajguru%20College%20of%20Applied%20Sciences%20for%20Women!5e0!3m2!1sen!2sin!4v1671297798418!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h1 id="techmelange" class="display-4 fst-italic text-center"><b>Contact Us</b></h1>
+        <p>email: 
+          <br>mobile: 
+        </p>
+        <div class="text-center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.039847006692!2d77.3203464141196!3d28.598581392369603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4e54a9b122f%3A0x2e3b06c41fed53e6!2sShaheed%20Rajguru%20College%20of%20Applied%20Sciences%20for%20Women!5e0!3m2!1sen!2sin!4v1671297798418!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <p class="lead mb-0">
           <a href="#" class="text-white fw-bold"></a>
         </p>
