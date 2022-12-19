@@ -34,6 +34,6 @@ def home(request):
     str2 = "For the first time in 11 years, Tech Melange was conducted online which resulted in an overwhelming participation from students all over India. It brings together tech-enthusiasts, coders and gamers. Winners are also awarded with lucrative cash prizes, coupons and certificates. Ite is acquainted to the masses by the mingled effort of  the faculty and students."
     str3 ="To maintain the legacy, we have some exciting events this year as well such as Ideathon, Brain Wreck, E - tambola, Cyber hustle, Whiz Quiz and Hardcode. This gives students a golden opportunity to showcase their talent, innovation, creativity and technicality. Students of various renowned universities and colleges(Delhi University, JNU, IP University, IT, Amity, IIIT-D, Jamia Milia etc.) participate in this mass endeavour."
     str4="Our aim is to enhance the intellectual awareness and development of students. The fest adopts a highly participative and interactive approach with a strong emphasis on ‘Learning by Doing’ and is successful in quenching the thirst of today’s well aware techno youth all around."
-    
-    return render(request, 'index.html', {'stg': str, 'stg1': str1, 'stg2': str2,'stg3':str3 ,
-    'stg4': str4,'a':a , 'b':b})
+    email="eniac@rajguru.com"
+    mobile="9814739274, 011-22353108"
+    return render(request, 'index.html', {'stg': str, 'stg1': str1, 'stg2': str2,'stg3':str3 , 'stg4': str4, 'email': email, 'mobile': mobile,'a':a , 'b':b})
