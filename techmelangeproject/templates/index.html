@@ -6,10 +6,6 @@
     <!-- cheacking for carousel only -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- check over -->
     <link rel="stylesheet" href="static\style.css" />
     <link rel="shortcut icon" href="static\logo.webp" type="image\x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,10 +55,10 @@
 
     <section id="home_page_main">
       <div class="bg-image text-white">
-        <h1 id="techmelange" class="display-4 fst-italic"><b>{{ a.fest_name }}</b></h1>
-        <p class="lead my-3">Technology is best when it brings people together</p>
-        {% comment %} <p class="lead my-3">{{ a1.fest_desc }}</p> {% endcomment %}
-        <p class="lead my-3" style="font-size: 30px; ">
+        <h1 id="techmelange" class="display-4 fst-italic pt-4 pl-4"><b>{{ a.fest_name }}</b></h1>
+        <p class="lead my-3 pl-4">Technology is best when it brings people together</p>
+        {% comment %} <p class="lead my-3 pl-4">{{ a1.fest_desc }}</p> {% endcomment %}
+        <p class="lead my-3 pl-4" style="font-size: 30px; ">
           <b>10 JAN - 11 JAN</b>
         </p>
         <p class="lead mb-0">
@@ -89,23 +85,23 @@
       <div class="p-3 mb-2 bg-light text-black-50" id="eventspage">
         <h1 id="techmelange" class="display-4 fst-italic text-center"><b>Events</b></h1>
         <div class="container text-center">
-          <div class="row row-cols-3">
-            <div class="col">
+          <div class="row">
+            <div class="col-md-4">
               <a href="/templates/event1.html"><img src="/static/poster1.jpg" height="300px" width="250px" alt="1" /></a>
             </div>
-            <div class="col">
+            <div class="col-md-4">
               <a href="/templates/event2.html"><img src="https://picsum.photos/seed/picsum/200/300" alt="2" /></a>
             </div>
-            <div class="col mt-2">
+            <div class="col-md-4 mt-2">
               <a href="/templates/event3.html"><img src="https://picsum.photos/seed/picsum/200/300" alt="3" /></a>
             </div>
-            <div class="col">
+            <div class="col-md-4">
               <a href="/templates/event4.html"><img src="https://picsum.photos/seed/picsum/200/300" alt="4" /></a>
             </div>
-            <div class="col">
+            <div class="col-md-4">
               <a href="/templates/event5.html"><img src="https://picsum.photos/seed/picsum/200/300" alt="5" /></a>
             </div>
-            <div class="col mt-2">
+            <div class="col-md-4 mt-2">
               <a href="/templates/event6.html"><img src="https://picsum.photos/seed/picsum/200/300" alt="6" /></a>
             </div>
           </div>
@@ -160,5 +156,8 @@
         </p>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
