@@ -19,22 +19,61 @@
     .container{
       text-align: center;
     }
-    body{
+    /* body{
       background-image: url("/static/event1_bg.png");
       background-size: cover;
+    } */
+    .wrap {
+      /* overflow: hidden; */
+      position: relative;
+    }
+
+    .demo-bg {
+      opacity: 0.6;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+    }
+
+    .content {
+      position: relative;
     }
     </style>
 </head>
 <body>
-  <div class="inner">
-    <h1>Tech Charades</h1>
-    <div class="container no-gutters border rounded overflow-hidden flex-md-row ">
-      <div class="row row-cols-2">
-        <div class="col text-bg-dark ">
-          This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
-        </div>
-        <div class="col">
-          <img src='static/poster1.jpg' alt="poster">
+  <div class="wrap">
+    <img
+      class="demo-bg"
+      src="https://assets.digitalocean.com/labs/images/community_bg.png"
+      alt=""
+    >
+    <div class="content">
+      <div class="inner">
+        <h1>Tech Charades</h1>
+        <div class="container no-gutters  overflow-hidden flex-md-row ">
+          <div class="row row-cols-2" style="padding-left: 10px ;">
+            <div class="col border rounded" style="padding-left: 15px ;">
+              <div class="container text-center" style="padding-top: 10px;">
+                This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
+                This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
+                This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
+                This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
+                This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
+                This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
+                This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
+                This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
+                This is an event about tech Charades. One can participate in this wonderful event by just clicking the register button!
+              </div>
+            </div>
+            <div class="col">
+              <img src="/static/poster1.jpg" alt="poster"
+              height="390px" width="300px"
+              
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
