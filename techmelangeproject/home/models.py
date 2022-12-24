@@ -27,6 +27,8 @@ class events(models.Model):
     e_img=models.ImageField()
     e_frm=models.URLField(max_length=200,null=True)
     
-
+class contacts(models.Model):
+    C_email=models.CharField(max_length=50)
+    C_mobile=models.CharField(max_length=10,null=True)
    
      

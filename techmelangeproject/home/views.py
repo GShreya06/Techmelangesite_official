@@ -2,6 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from .models import festdesc
 from .models import events
+from .models import contacts
+from .models import sponsers
 # Create your views here.
 
 
