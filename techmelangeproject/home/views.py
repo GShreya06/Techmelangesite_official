@@ -1,3 +1,6 @@
+from datetime import datetime
+from multiprocessing import context
+from urllib.request import Request
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import festdesc
@@ -11,7 +14,6 @@ def home(request):
     # for only first element use first
     #for all objects use all
     a=festdesc.objects.all().first(); 
-    # a1=festdesc.objects.all().get(1);
     print(a)
     # print(a1)
     # for i in a: 
@@ -20,13 +22,13 @@ def home(request):
     #     print(i.fest_desc)
     #     print(i.fest_bg)
     
-    b=events.objects.all().first();
+    b=events.objects.all();
     print(b)
-    # for i in b:
-    #     print(i.e_name)
-    #     print(i.e_desc)
-    #     print(i.e_img)
-    #     print(i.e_frm)
+    for i in b:
+        e1=i.e_name
+        print(i.e_desc)
+        print(i.e_img)
+        print(i.e_frm)
         
     
     
@@ -38,4 +40,26 @@ def home(request):
     str4="Our aim is to enhance the intellectual awareness and development of students. The fest adopts a highly participative and interactive approach with a strong emphasis on ‘Learning by Doing’ and is successful in quenching the thirst of today’s well aware techno youth all around."
     email="eniac@rajguru.com"
     mobile="9814739274, 011-22353108"
-    return render(request, 'index.html', {'stg': str, 'stg1': str1, 'stg2': str2,'stg3':str3 , 'stg4': str4, 'email': email, 'mobile': mobile,'a':a , 'b':b})
+    return render(request, 'index.html', {'stg': str, 'stg1': str1, 'stg2': str2,'stg3':str3 , 
+                  'stg4': str4, 'email': email, 'mobile': mobile,'a':a , 'b':b , 'e1':e1})
+
+def Hardcode(request):
+    return render (request,'Hardcode.html')
+
+def design(request):
+    return render (request,'design.html')
+
+def hackathon(request):
+    return render (request,'hackathon.html')
+
+def Lan(request):
+    return render (request,'Lan.html')
+
+def Techcharades(request):
+    return render (request,'Techcharades.html')
+
+def Whizquiz(request):
+    return render (request,'Whizquiz.html')
+
+def Techcharades(request):
+    return render (request,'Techcharades.html')

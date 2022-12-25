@@ -23,7 +23,7 @@ class teachcoor(models.Model):
 # Shreya Added 
 class events(models.Model):
     e_name=models.CharField(max_length=50)
-    e_desc=models.CharField(max_length=100)
+    e_desc=models.CharField(max_length=2000)
     e_img=models.ImageField()
     e_frm=models.URLField(max_length=200,null=True)
     
