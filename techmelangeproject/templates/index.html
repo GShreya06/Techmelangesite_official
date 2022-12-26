@@ -56,11 +56,11 @@
 
     <section id="home_page_main">
       <div class="bg-image text-white">
-        <h1 id="techmelange" class="display-4 fst-italic pt-4 pl-4"><b>{{ a.fest_name }}</b></h1>
-        <p class="lead my-3 pl-4">Technology is best when it brings people together</p>
+        <h1 id="techmelange" class="display-4 fst-italic pt-4 pl-4"><b>{{ m1 }}</b></h1>
+        <p class="lead my-3 pl-4">{{ m2 }}</p>
         {% comment %} <p class="lead my-3 pl-4">{{ a1.fest_desc }}</p> {% endcomment %}
         <p class="lead my-3 pl-4" style="font-size: 30px; ">
-          <b>10 JAN - 11 JAN</b>
+          <b>{{ m3 }}</b>
         </p>
         <p class="lead mb-0">
           <a href="#" class="text-white fw-bold"></a>
@@ -71,14 +71,8 @@
     <section id="about_page">
       <div class="p-3 mb-2 bg-dark text-white" id="aboutpage">
         <h1 id="techmelange" class="display-4 fst-italic"><b>About</b></h1><br />
-        <h2 class="text-left">{{ stg }}</h2>
-        <p>{{ stg1 }}</p>
-        <p></p>
-        {% comment %} <p>{{ b.fest_desc }}</p> {% endcomment %}
-        {% comment %}from database{% endcomment %}
-        <p>{{ stg2 }}</p>
-        <p>{{ stg3 }}</p>
-        <p>{{ stg4 }}</p>
+        <h2 class="text-left">{{a1}}</h2>
+        <p>{{ a2 }}</p>
       </div>
     </section>
 
@@ -178,8 +172,8 @@
     <section id="contactus_page">
       <div class="p-3 mb-2 bg-dark text-white" id="contactuspage">
         <h1 id="techmelange" class="display-4 fst-italic text-center"><b>Contact Us</b></h1>
-        <p>email: {{email}}
-          <br>mobile: {{mobile}}
+        <p>email: {{c1}}
+          <br>mobile: {{c2}}
         </p>
         <div class="text-center">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.039847006692!2d77.3203464141196!3d28.598581392369603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4e54a9b122f%3A0x2e3b06c41fed53e6!2sShaheed%20Rajguru%20College%20of%20Applied%20Sciences%20for%20Women!5e0!3m2!1sen!2sin!4v1671297798418!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
