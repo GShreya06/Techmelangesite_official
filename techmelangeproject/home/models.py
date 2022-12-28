@@ -42,4 +42,5 @@ class main(models.Model):
     mdate=models.CharField(max_length=50)
     mbg=models.ImageField()
    
-     
+
+#for commit
