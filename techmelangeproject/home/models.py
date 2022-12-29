@@ -43,4 +43,4 @@ class main(models.Model):
     mbg=models.ImageField()
    
 
-
+#cmnt
