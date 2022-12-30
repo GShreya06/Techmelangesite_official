@@ -19,7 +19,12 @@ class teachcoor(models.Model):
     url=models.URLField(max_length=100000)
  
 # Nishu Added
- 
+class studcoor(models.Model):
+    s_name=models.CharField(max_length=122)
+    s_desc=models.TextField()
+    s_image=models.FileField(upload_to="static/",max_length=250,null=True,default=None)
+    s_link=models.URLField()
+
 # Shreya Added 
 class events(models.Model):
     e_name=models.CharField(max_length=50)
@@ -37,4 +42,4 @@ class main(models.Model):
     mdate=models.CharField(max_length=50)
     mbg=models.ImageField()
    
-     
+#cmnt
