@@ -2,14 +2,19 @@ from django.contrib import admin
 from django.urls import path
 from home import views
 
+#for images
+# from django.conf import settings
+# from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path("Hardcode/",views.Hardcode, name='Hardcode'),
-    path("design/",views.design , name='Design-o-web'),
-    path("Lan/",views.Lan, name='Lan-o-mania'),
-    path("hackathon/",views.hackathon, name='Hackathon'),
-    path("Whizquiz/",views.Whizquiz, name='Whizquiz'),
-    path("Techcharades/",views.Techcharades, name='Techcharades'),
     path("sponsers/",views.sponsers, name='Sponsers'),
+    path("event/event_id=<event_id>",views.event,name='event'),
+    #for images
+    # path('admin/',admin.site.urls),
+    # path('', include ('b.urls')),
 ]
+
+#for images
+# if settings.DEBUG:
+#     urlpatterns += static(settings.MEDIA URL, document_root=settings.MEDIA_ROOT)
