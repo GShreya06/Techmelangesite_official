@@ -40,6 +40,11 @@
       .content {
         position: relative;
       }
+      button{
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: lightblue;
+      }
     </style>
   </head>
   <body>
@@ -51,8 +56,10 @@
           <div class="container no-gutters overflow-hidden flex-md-row">
             <div class="row row-cols-2" style="padding-left: 10px ;">
               <div class="col border rounded" style="padding-left: 15px ;">
-                <div class="container text-center" style="padding-top: 10px;">{{b.e_desc}}</div>
+                <div class="container text-center" style="padding-top: 10px;">{{b.e_desc |linebreaks}}</div>
+                <a href= {{b.e_frm}} target="_blank"><button>Register here</button></a>
               </div>
+              
               <div class="col">
                 <img src="/static/poster1.jpg" alt="poster" height="390px" width="300px" />
               </div>
