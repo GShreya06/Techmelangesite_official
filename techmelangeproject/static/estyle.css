@@ -1,0 +1,159 @@
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body {
+    background-color: #89d6fb;
+}
+
+.center {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+}
+
+img{
+    
+    float: left;
+}
+
+.navbar {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0px 9px;
+    padding: 4px 0px;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+
+}
+
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 34px 23px;
+
+}
+
+.navbar li a:hover, .navbar li a:active {
+    color: blue;
+
+}
+
+.ename {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.cosection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.h1name {
+    text-align: center;
+    padding-top: 100px;
+    color: black;
+}
+
+.h2name {
+    text-align: center;
+    color: black;
+
+
+}
+
+.cname {
+    text-align: center;
+    color: black;
+}
+
+.container {
+    text-align: center;
+}
+
+/* body{
+        background-image: url("/static/event1_bg.png");
+        background-size: cover;
+      } */
+.wrap {
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.demo-bg {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    position: relative;
+}
+
+button {
+    font-weight: bold;
+    border: 1px darkblue;
+    border-radius: 10px;
+    background-color: #02a9f7;
+    box-shadow: 6px 6px darkblue;
+    margin: auto;
+    padding: 12px;
+}
+
+.coordinators {
+    padding: 100px;
+    padding-top: 300px;
+}
+
+.textcoor {
+    padding-top: 300px;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+video {
+    justify-content: center;
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+}
